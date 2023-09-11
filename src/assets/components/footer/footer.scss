@@ -1,0 +1,36 @@
+.footer{
+    background: url('../img/footerBg-min.jpg') no-repeat center;
+    background-size: cover;
+    padding-top: 162px;
+    padding-bottom: 50px;
+    @media (max-width: 767px) {
+        background: url('../img/footer-mob-min.jpg') no-repeat top;
+        background-size: cover;
+        padding-bottom: 41px;
+    }
+    .footer-form{
+        max-width: 424px;
+        margin: 0 auto 81px auto;
+        padding: 20px;
+        background-color: #E2E2E2;
+        @media (max-width: 767px) {
+            margin-bottom: 0;
+        }
+        &__title{
+            @include fluid-font-size(22px, 30px, 430px, 1920px, 18px);
+            font-style: normal;
+            font-weight: 700;
+            color: $black;
+            margin-bottom: 15px;
+        }
+        &__text{
+            margin-bottom: 30px;
+            @include fluid-font-size(16px, 20px, 430px, 1920px, 18px);
+            max-width: 270px;
+        }
+    }
+    &__form-btn{
+        height: 52px;
+        @include fluid-font-size(16px, 20px, 430px, 1920px, 18px);
+    }
+}

@@ -1,0 +1,78 @@
+.hero{
+    background: url("../img/headerBg-min.jpg") no-repeat center;
+    background-size: cover;
+    color: $white;
+    &__row{
+        display: flex;
+        align-items: center;
+        display: -ms-flexbox;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        gap: 50px;
+        padding-top: 76px;
+        padding-bottom: 100px;
+        @media (max-width: 768px){
+            flex-direction: column;
+            gap: 15px;
+        }
+        @media (max-width:407px) {
+            max-width: 310px;
+        }
+    }
+    &__text{
+        @include fluid-font-size(18px, 25px, 430px, 1920px, 18px);
+        font-weight: 700;
+        line-height: 110%;
+        margin-bottom: 242px;
+        @media (max-width:768px) {
+            margin-bottom: 251px;
+        }
+    }
+    &__on-order{
+        font-family:'InterMedium',sans-serif;
+        font-size: 20px;
+        line-height: 24px;
+    }
+    &__form{
+        background: #E2E2E2;
+        backdrop-filter: blur(18.5px);
+        width: 460px;
+        padding: 20px;
+        &-button{
+            height: 52px;
+        }
+        @media (max-width:407px) {
+            width: 310px;
+        }
+        &-title{
+            @include fluid-font-size(22px, 30px, 430px, 1920px, 18px);
+            color: #E46B1A;
+            white-space: pre-line;
+            font-weight: 700;
+            margin-bottom: 9px;
+        }
+        &-text{
+            color: #000;
+            @include fluid-font-size(16px, 20px, 430px, 1920px, 18px);
+            margin-bottom: 20px;
+            white-space: pre-line;
+        }
+        @media (max-width: 1200px){
+            max-width: 400px;
+        }
+        @media (max-width: 991.98px){
+            max-width: 390px;
+        }
+        .button{
+            @include fluid-font-size(16px, 20px, 430px, 1920px, 18px);
+            margin-top: 20px;
+        }
+    }
+    @media (max-width:768px) {
+        background: url("../img/bg-main-mob-min.jpg") no-repeat center;
+        background-size: cover;
+    }
+}

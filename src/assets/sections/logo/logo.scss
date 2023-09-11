@@ -1,0 +1,11 @@
+.logo{
+    max-width: 127px;
+    @media (max-width: 767px) {
+        max-width: 65px;
+    }
+}
+.logo-link-footer {
+    @media (max-width: 767px) {
+        display: none;
+    }
+}

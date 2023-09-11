@@ -1,0 +1,8 @@
+.main-title {
+    @include fluid-font-size(28px, 58px, 430px, 1920px,18px);
+    font-weight: 700;
+    line-height: 110%;
+    max-width: 783px;
+    white-space: pre-line;
+    margin-bottom: 15px;
+}

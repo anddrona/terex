@@ -1,0 +1,7 @@
+@import 'mixins/fonts';
+
+@include font-face('UbuntuRegular', '../fonts/UbuntuRegular.ttf', swap, 400, normal);
+@include font-face('MontserratMedium', '../fonts/MontserratMedium.ttf', swap, 400, normal);
+@include font-face('MontserratBold', '../fonts/MontserratBold.ttf', swap, 400, normal);
+@include font-face('ArialBold', '../fonts/ArialBold.ttf', swap, 700, normal);
+@include font-face('InterMedium', '../fonts/InterMedium.otf', swap, 500, normal);

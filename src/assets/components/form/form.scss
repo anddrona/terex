@@ -1,0 +1,40 @@
+.form{
+    display: flex;
+    flex-direction: column;
+    &__input{
+        background: white;
+        border: none;
+        box-sizing: border-box;
+        width: 100%;
+        padding: 10px 25px;
+        color: $main-form-placeholder;
+        @include fluid-font-size(14px, 20px, 430px, 1920px, 18px);
+        text-transform: lowercase;
+        &:not(:last-of-type){
+            margin-bottom: 10px;
+        }
+        &::placeholder {
+            color: $main-form-placeholder;
+            font-weight: 400;
+        }
+        &-margin:not(:last-of-type) {
+            margin-bottom: 5px;
+        }
+        &-placeholder{
+            padding: 10px 15px;
+            @include fluid-font-size(12px, 16px, 430px, 1920px, 18px);
+            font-family: 'MontserratMedium',sans-serif;
+            &::placeholder{
+                @include fluid-font-size(12px, 16px, 430px, 1920px, 18px);
+            }
+            
+        }
+        
+    }
+    
+    &__footer-margin{
+        margin-top: 20px;
+    }
+    
+    
+}

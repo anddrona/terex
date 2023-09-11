@@ -1,0 +1,21 @@
+@import 'mixins/fluid-font-size';
+@import 'mixins/fonts';
+@import 'mixins/visually-hidden';
+@import 'vars';
+@import 'fonts';
+// @import 'libs';
+@import 'core';
+
+// Components
+@import "src/assets/components/header/header";
+@import "src/assets/components/main-title/main-title";
+@import "../components/form/form.scss";
+@import "../components/button/button.scss";
+@import "../components/styled-ul/styled-ul.scss";
+@import "../components/footer/footer.scss";
+@import "../components/modal/modal.scss";
+
+// Sections
+@import "../sections/hero/hero";
+@import "../sections/models/models.scss";
+@import "../sections/logo/logo.scss";
